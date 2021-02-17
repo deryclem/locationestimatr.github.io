@@ -1,13 +1,13 @@
 # locationestimatr.github.io
 This is a game where you are put anywhere on earth, and you have to figure out where you are
 
-## How to play
+## Comment jouer ?
 
-### Choose a map
+### Choisir une carte
 
 ![Image of choosing a map](screenshots/choosemap.png)
 
-### Guess where you are
+### Devinez là où vous situez
 
 ![Image of street view](screenshots/guess.png)
 
@@ -15,7 +15,7 @@ This is a game where you are put anywhere on earth, and you have to figure out w
 
 ![Overview of score](screenshots/score.png)
 
-### How to self host
+### Comment héberger ce repo 
 1. Fork this repository to your account
 2. Clone the repository
 3. Replace the api key found at the bottom in /index.html and /play/index.html with your own

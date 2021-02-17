@@ -38,10 +38,10 @@
 <body>
 <div class='estimator'>
     <div class="gamerule-selector">
-        <h2>Rules</h2>
+        <h2>Règles</h2>
         <form>
             <div class="radio-picker">
-                <p>Round count</p>
+                <p>Nombre de tours</p>
                 <input type="radio" name="round-count" value="1" id="1round">
                 <label class="radio-choice" for="1round">1</label>
                 <input type="radio" name="round-count" value="2" id="2round">
@@ -54,21 +54,21 @@
                 <label class="radio-choice" for="5round">5</label>
             </div>
             <label class="number-picker">
-                <p>Time limit</p>
+                <p>Limite de temps</p>
                 <p class="hint">-1 = infinite</p>
                 <input type="number" name='time-limit' class='button' value="-1">
-                <span>Seconds</span>
+                <span>Secondes</span>
             </label>
             <label class="number-picker">
-                <p>Move limit</p>
-                <p class="hint">-1 = infinite</p>
+                <p>Limite de déplacement</p>
+                <p class="hint">-1 = infini</p>
                 <input type="number" name='move-limit' class='button' value="-1">
-                <span>Moves</span>
+                <span>Déplacements</span>
             </label>
             <div class="radio-picker pan-radio">
-                <p>Zooming and panning</p>
+                <p>Zoom et rotation</p>
                 <input type="checkbox" name="allowed" value="pan" id="yes" checked>
-                <label class="radio-choice" for="yes">Pan</label>
+                <label class="radio-choice" for="yes">Rotation</label>
                 <input type="checkbox" name="allowed" value="zoom" id="no" checked>
                 <label class="radio-choice" for="no">Zoom</label>
             </div>
@@ -84,32 +84,32 @@
             </div>
             <div class="score-text">
                 <p>Your guess is 0 cm removed from your start location</p>
-                <p>You scored ∞ points</p>
+                <p>Vous avez marqué ∞ points</p>
             </div>
-            <div class="button next-round-button" onclick="game.nextRoundButton()">Next Round</div>
+            <div class="button next-round-button" onclick="game.nextRoundButton()">Tour suivant</div>
             <div class="game-end-buttons">
                 <form class="high-score-form" onsubmit="game.uploadScore(event)">
                     <p>Submit to scoreboard to see other high scores</p>
                     <input pattern=".{3,}" class="username-input" placeholder="Username" required title="3 characters minimum">
                     <input type="submit" value="Submit" class="button submit-button">
                 </form>
-                <div class="button play-again-button" onclick="game.playAgain();">Play Again</div>
-                <div class="button home-button" onclick="goHome()">Choose Another Map</div>
+                <div class="button play-again-button" onclick="game.playAgain();">Re-Jouer</div>
+                <div class="button home-button" onclick="goHome()">Choisir une autre carte</div>
             </div>
         </div>
     </div>
     <div class="info-view">
-        <div class="round">Round: <b>2/5</b></div>
+        <div class="round">Tour: <b>2/5</b></div>
         <div class="total-score">Score: <b>0</b></div>
-        <div class="time-left">Time: <b>0</b></div>
-        <div class="moves-left">Moves: <b>0</b></div>
+        <div class="time-left">Temps: <b>0</b></div>
+        <div class="moves-left">Déplacements: <b>0</b></div>
     </div>
     <div class="return-home" onclick="game.returnHome()"></div>
     <div class="guess-map">
         <div class="toggle-map-overlay" onclick="game.toggleMapOverlay()"></div>
         <div class="guess-map-resizer"></div>
         <div class="embed-map"></div>
-        <div class="guess-button" onclick="game.makeGuess()">Make Guess</div>
+        <div class="guess-button" onclick="game.makeGuess()">Valider la position</div>
     </div>
     <div class="streetview"></div>
 </div>
